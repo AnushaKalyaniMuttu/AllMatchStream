@@ -1,0 +1,13 @@
+List<String> words = List.of("Java", "Stream", "Example");
+boolean allLongStrings = words.stream().allMatch(s -> s.length() > 3);
+System.out.println(allLongStrings);
+
+
+List<Integer> numbers = List.of(2, 4, 6, 8, 10);
+boolean allEven = numbers.stream().allMatch(n -> n % 2 == 0);
+System.out.println(allEven);  // Output: true
+
+
+List<Integer> numbers = List.of(10, 20, 30, 40, 50);
+boolean allDivisibleByFive = numbers.stream().allMatch(n -> n % 5 == 0);
+System.out.println(allDivisibleByFive);
